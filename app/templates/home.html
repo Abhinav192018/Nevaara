@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body class="bg-[#f7e9dd]">
+
+  <!-- Banner Section -->
+  <section
+    class="relative mx-auto bg-[#f7e9dd] overflow-hidden flex flex-col md:flex-row items-center justify-between p-6 md:p-12">
+
+    <!-- Left Image -->
+    <div class="w-full md:w-1/2 mb-6 md:mb-0">
+      <img
+        src="https://img.freepik.com/premium-photo/hot-girl-landscape-wearing-full-traditional-dress_658768-431.jpg?w=2000"
+        alt="Banner" class="rounded-3xl md:rounded-l-3xl md:rounded-r-none object-cover w-full h-72 md:h-full">
+    </div>
+
+    <!-- Right Content -->
+    <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left">
+      <h2 class="text-3xl md:text-5xl font-bold text-[#3a2a1e] leading-tight">
+        Where Modern Women <br class="hidden md:block"> Meet Tradition
+      </h2>
+      <p class="mt-4 text-base md:text-lg text-[#3a2a1e]/80">
+        where timeless Indian hand-block traditions meet the spirit of the modern woman
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+        <a href=""
+          class="px-6 py-2 border border-[#3a2a1e] rounded-full text-[#3a2a1e] hover:bg-[#3a2a1e] hover:text-white transition">PREMIUM</a>
+        <a href=""
+          class="px-6 py-2 border border-[#3a2a1e] rounded-full text-[#3a2a1e] hover:bg-[#3a2a1e] hover:text-white transition">WEDDING</a>
+        <a href=""
+          class="px-6 py-2 border border-[#3a2a1e] rounded-full text-[#3a2a1e] hover:bg-[#3a2a1e] hover:text-white transition">CUSTOMISATION</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="bg-[#f7e9dd] py-10">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <!-- Cards Wrapper -->
+      <div class="flex gap-6 overflow-x-auto sm:grid sm:grid-cols-3 sm:gap-6 scrollbar-hide">
+
+        <!-- Card 1 -->
+        <div class="relative rounded-2xl overflow-hidden shadow-lg min-w-[250px] sm:min-w-0">
+          <img src="https://static.india.com/wp-content/uploads/2024/06/Leriya-Fashion-Sleeveless-Tops.jpg"
+            alt="Sleeveless" class="w-full h-96 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 text-white">
+            <span class="block text-sm font-semibold mb-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur">
+              01
+            </span>
+            <h2 class="text-2xl font-bold">sleeveless</h2>
+            <p class="text-sm">Tailor-made pieces to fit your style.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative rounded-2xl overflow-hidden shadow-lg min-w-[250px] sm:min-w-0">
+          <img
+            src="https://i5.walmartimages.com/seo/JYLFC-Womens-Peplum-Tops-V-Neck-Short-Sleeve-Wrap-Dressy-Blouse-Ruffle-Hem-M_b90e7220-c187-4e90-8c71-bbf30b91da43.10c88afe98d510527be8b07bb3a1c713.jpeg"
+            alt="Peplum Top" class="w-full h-96 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 text-white">
+            <span class="block text-sm font-semibold mb-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur">
+              02
+            </span>
+            <h2 class="text-2xl font-bold">peplum top</h2>
+            <p class="text-sm">made for modern women</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative rounded-2xl overflow-hidden shadow-lg min-w-[250px] sm:min-w-0">
+          <img
+            src="https://wforwoman.com/cdn/shop/files/23AUSP11442-122624_1_1f12c841-5a60-49a0-a8a2-aac425f8e766.jpg?v=1721311611"
+            alt="Decorations" class="w-full h-96 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 text-white">
+            <span class="block text-sm font-semibold mb-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur">
+              03
+            </span>
+            <h2 class="text-2xl font-bold">Decorations</h2>
+            <p class="text-sm">Beauty in style</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Budget Section -->
+  <section class="bg-[#f7e9dd] py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#3a2a1e] mb-10">Budget Collection</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Price Card -->
+        <a href="" class="bg-white rounded-2xl shadow-lg p-8 relative overflow-hidden">
+          <div class="absolute top-4 right-4 text-[#f7e9dd]/50 text-6xl font-extrabold select-none">₹</div>
+          <div class="flex flex-col items-center">
+            <div class="bg-[#3a2a1e] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+              <!-- Example icon (tag) -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 7h.01M3 5a2 2 0 012-2h4a2 2 0 011.414.586l7.293 7.293a1 1 0 010 1.414l-4.586 4.586a1 1 0 01-1.414 0L5.586 7A2 2 0 015 5H3z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#3a2a1e]">Budget Style</h3>
+            <p class="mt-2 text-lg font-bold text-[#3a2a1e]">₹399/-</p>
+          </div>
+        </a>
+
+        <a href="" class="bg-white rounded-2xl shadow-lg p-8 relative overflow-hidden">
+          <div class="absolute top-4 right-4 text-[#f7e9dd]/50 text-6xl font-extrabold select-none">₹</div>
+          <div class="flex flex-col items-center">
+            <div class="bg-[#3a2a1e] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8c-1.104 0-2 .672-2 1.5S10.896 11 12 11s2-.672 2-1.5S13.104 8 12 8zM12 14v.01" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#3a2a1e]">Trendy Picks</h3>
+            <p class="mt-2 text-lg font-bold text-[#3a2a1e]">₹699/-</p>
+          </div>
+        </a>
+
+        <a href="" class="bg-white rounded-2xl shadow-lg p-8 relative overflow-hidden">
+          <div class="absolute top-4 right-4 text-[#f7e9dd]/50 text-6xl font-extrabold select-none">₹</div>
+          <div class="flex flex-col items-center">
+            <div class="bg-[#3a2a1e] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#3a2a1e]">Elegant Wear</h3>
+            <p class="mt-2 text-lg font-bold text-[#3a2a1e]">₹999/-</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+{% endblock %}

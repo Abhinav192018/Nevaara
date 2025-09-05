@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="py-16 bg-[#f7e9dd]">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-[#3a2a1e] inline-flex items-center gap-3 relative">
+                <i class="fas fa-fire text-red-600 animate-pulse"></i>
+                <span class="bg-gradient-to-r from-[#3a2a1e] to-[#5c4230] bg-clip-text text-transparent">
+                    Clearance Sale
+                </span>
+            </h2>
+            <div class="w-32 h-1 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 mx-auto mt-3 rounded-full">
+            </div>
+        </div>
+
+
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden hover:shadow-lg transition">
+                <img src="https://static.india.com/wp-content/uploads/2024/06/Leriya-Fashion-Sleeveless-Tops.jpg"
+                    alt="Sleeveless" class="w-full h-64 object-cover">
+                <div class="bg-[#f7e9dd] p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Sleeveless Top</h3>
+                    <p class="text-sm text-gray-500">Tailor-made comfort</p>
+
+                    <!-- Pricing -->
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-lg font-bold text-[#3a2a1e]">₹399</span>
+                        <span class="text-sm text-gray-500 line-through">₹799</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-semibold px-2 py-1 rounded">-50%</span>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="mt-3">
+                        <a href="#"
+                            class="px-4 py-2 text-sm bg-[#3a2a1e] text-white rounded-full hover:bg-[#5c4230] transition">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden hover:shadow-lg transition">
+                <img src="https://i5.walmartimages.com/seo/JYLFC-Womens-Peplum-Tops-V-Neck-Short-Sleeve-Wrap-Dressy-Blouse-Ruffle-Hem-M_b90e7220-c187-4e90-8c71-bbf30b91da43.10c88afe98d510527be8b07bb3a1c713.jpeg"
+                    alt="Peplum Top" class="w-full h-64 object-cover">
+                <div class="bg-[#f7e9dd] p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Peplum Top</h3>
+                    <p class="text-sm text-gray-500">Made for modern women</p>
+
+                    <!-- Pricing -->
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-lg font-bold text-[#3a2a1e]">₹699</span>
+                        <span class="text-sm text-gray-500 line-through">₹1299</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-semibold px-2 py-1 rounded">-46%</span>
+                    </div>
+
+                    <div class="mt-3">
+                        <a href="#"
+                            class="px-4 py-2 text-sm bg-[#3a2a1e] text-white rounded-full hover:bg-[#5c4230] transition">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden hover:shadow-lg transition">
+                <img src="https://wforwoman.com/cdn/shop/files/23AUSP11442-122624_1_1f12c841-5a60-49a0-a8a2-aac425f8e766.jpg?v=1721311611"
+                    alt="Decorations" class="w-full h-64 object-cover">
+                <div class="bg-[#f7e9dd] p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Decorations Dress</h3>
+                    <p class="text-sm text-gray-500">Beauty in style</p>
+
+                    <!-- Pricing -->
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-lg font-bold text-[#3a2a1e]">₹999</span>
+                        <span class="text-sm text-gray-500 line-through">₹1999</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-semibold px-2 py-1 rounded">-50%</span>
+                    </div>
+
+                    <div class="mt-3">
+                        <a href="#"
+                            class="px-4 py-2 text-sm bg-[#3a2a1e] text-white rounded-full hover:bg-[#5c4230] transition">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-2xl overflow-hidden hover:shadow-lg transition">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.BVtjNhPPn6rspiFl3cVsdwHaJ4?r=0&cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Premium Saree" class="w-full h-64 object-cover">
+                <div class="bg-[#f7e9dd] p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Premium Saree</h3>
+                    <p class="text-sm text-gray-500">Tradition redefined</p>
+
+                    <!-- Pricing -->
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-lg font-bold text-[#3a2a1e]">₹1499</span>
+                        <span class="text-sm text-gray-500 line-through">₹2999</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-semibold px-2 py-1 rounded">-50%</span>
+                    </div>
+
+                    <div class="mt-3">
+                        <a href="#"
+                            class="px-4 py-2 text-sm bg-[#3a2a1e] text-white rounded-full hover:bg-[#5c4230] transition">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

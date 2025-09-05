@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevaara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Global Heading Style (applies to h1–h6) */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+
+        }
+
+        /* Paragraph Style */
+        p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            /* slim look */
+            font-size: 1rem;
+            /* base size */
+            line-height: 1.75;
+            /* nice readability */
+            margin-bottom: 1rem;
+            letter-spacing: 0.2px;
+        }
+
+
+        body {
+
+            background-color: #f7e9dd;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 50%;
+            background-color: #4a3626;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .mobile-menu-slide {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu-slide.active {
+            transform: translateX(0);
+        }
+
+        .footer-hover-effect:hover {
+            transform: translateY(-3px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-white flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <!-- Slim Navbar -->
+    <nav class="bg-[#f6ecdf] fixed w-full h-26 md:h-20 lg:h-20 top-0 z-50 shadow-md pt-2">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+
+                <!-- Left: Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-[#4a3626] focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+
+                <!-- Center: Logo -->
+                <a href="/" class="flex items-center ml-10">
+                    <img src="{% static 'images/logo.png' %}" alt="Nevaara Logo" class="h-10 w-auto">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/"
+                        class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/' %}text-[#4a3626] font-semibold{% endif %}">HOME</a>
+                    <a href="/products/"
+                        class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/products/' %}text-[#4a3626] font-semibold{% endif %}">PRODUCTS</a>
+                    <a href="/clearance/"
+                        class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/clearance/' %}text-[#4a3626] font-semibold{% endif %}">CLEARANCE</a>
+                    <a href="/about/"
+                        class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}text-[#4a3626] font-semibold{% endif %}">ABOUT</a>
+                    <a href="/contact/"
+                        class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/contact/' %}text-[#4a3626] font-semibold{% endif %}">CONTACT</a>
+                </div>
+
+                <!-- Right: Icons + Search -->
+                <div class="flex items-center space-x-4">
+                    <a href="/wishlist/" class="text-gray-700 hover:text-[#4a3626] relative">
+                        <i class="fa-regular fa-heart text-lg"></i>
+                        <span
+                            class="absolute -top-1 -right-2 bg-[#4a3626] text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                    </a>
+                    <a href="/cart/" class="text-gray-700 hover:text-[#4a3626] relative">
+                        <i class="fa-solid fa-bag-shopping text-lg"></i>
+                        <span
+                            class="absolute -top-1 -right-2 bg-[#4a3626] text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                    </a>
+                    <a href="/profile/" class="text-gray-700 hover:text-[#4a3626]">
+                        <i class="fa-regular fa-user text-lg"></i>
+                    </a>
+                    <!-- Desktop Search -->
+                    <div class="hidden md:block relative">
+                        <input type="text" placeholder="Search..."
+                            class="pl-3 pr-8 py-1.5 text-sm rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4a3626] bg-white">
+                        <button class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-[#4a3626]">
+                            <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Search -->
+        <div class="md:hidden px-4 pb-2">
+            <div class="relative">
+                <input type="text" placeholder="Search..."
+                    class="w-full pl-3 pr-8 py-2 text-sm rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4a3626] bg-white">
+                <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-[#4a3626]">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#f6ecdf] shadow-lg">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/"
+                    class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/' %}font-semibold text-[#4a3626]{% endif %}"><i
+                        class="fas fa-home mr-2"></i>HOME</a>
+                <a href="/products/"
+                    class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/products/' %}font-semibold text-[#4a3626]{% endif %}"><i
+                        class="fas fa-shopping-bag mr-2"></i>PRODUCTS</a>
+                <a href="/clearance/"
+                    class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/clearance/' %}font-semibold text-[#4a3626]{% endif %}"><i
+                        class="fas fa-tags mr-2"></i>CLEARANCE</a>
+                <a href="/about/"
+                    class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}font-semibold text-[#4a3626]{% endif %}"><i
+                        class="fas fa-info-circle mr-2"></i>ABOUT</a>
+                <a href="/contact/"
+                    class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/contact/' %}font-semibold text-[#4a3626]{% endif %}"><i
+                        class="fas fa-envelope mr-2"></i>CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Main Content with top margin to account for fixed navbar -->
+    <main class="flex-grow mt-20">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#f6ecdf] mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 py-12">
+                <!-- Brand Section -->
+                <div class="space-y-4">
+                    <img src="{% static 'images/logo.png' %}" alt="Nevaara Logo" class="h-16 w-auto">
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Elevating everyday living with timeless designs and modern elegance. Discover products that
+                        inspire your lifestyle.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="footer-hover-effect text-gray-600 hover:text-[#4a3626] transition-colors duration-200">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#"
+                            class="footer-hover-effect text-gray-600 hover:text-[#4a3626] transition-colors duration-200">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#"
+                            class="footer-hover-effect text-gray-600 hover:text-[#4a3626] transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#"
+                            class="footer-hover-effect text-gray-600 hover:text-[#4a3626] transition-colors duration-200">
+                            <i class="fab fa-pinterest text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/"
+                                class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Home</a></li>
+                        <li><a href="/products/"
+                                class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Shop</a></li>
+                        <li><a href="/about/"
+                                class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">About Us</a>
+                        </li>
+                        <li><a href="/contact/"
+                                class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Customer Service</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#"
+                                class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">FAQs</a></li>
+                        <li><a href="#"
+                                class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Shipping
+                                Info</a></li>
+                        <li><a href="#"
+                                class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Returns
+                                Policy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Track
+                                Order</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Newsletter</h3>
+                    <p class="text-gray-600 text-sm mb-4">Subscribe to receive updates, access to exclusive deals, and
+                        more.</p>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4a3626]">
+                        <button
+                            class="w-full bg-[#4a3626] text-white py-2 rounded-lg hover:bg-[#3a2a1e] transition-colors duration-200">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-200 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-sm text-gray-600">© 2025 NEVAARA. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#"
+                            class="text-sm text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Privacy
+                            Policy</a>
+                        <a href="#"
+                            class="text-sm text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Terms of
+                            Service</a>
+                        <a href="#"
+                            class="text-sm text-gray-600 hover:text-[#4a3626] transition-colors duration-200">Cookie
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

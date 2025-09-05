@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="relative bg-[#f7e9dd] py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-[#3a2a1e] mb-4">Contact Us</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">
+        Have a question or need assistance? Reach out to us and we’ll get back to you as soon as possible.
+      </p>
+    </div>
+
+    <!-- Contact Layout -->
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 hover:border-2 border-[#3a2a1e]">
+        <h3 class="text-2xl font-semibold text-[#3a2a1e] mb-6">Send us a message</h3>
+        
+        <form class="space-y-5">
+          <div>
+            <label class="block text-[#3a2a1e] font-medium mb-2">Full Name</label>
+            <input type="text" placeholder="Your Name"
+              class="w-full px-4 py-3 border-2  rounded-xl focus:outline-none focus:ring-2 focus:ring-[#5c4230]">
+          </div>
+          
+     
+
+          <div>
+            <label class="block text-[#3a2a1e] font-medium mb-2">Phone Number</label>
+            <input type="text" placeholder="Your Phone"
+              class="w-full px-4 py-3 border-2  rounded-xl focus:outline-none focus:ring-2 focus:ring-[#5c4230]">
+          </div>
+          
+          <div>
+            <label class="block text-[#3a2a1e] font-medium mb-2">Message</label>
+            <textarea rows="5" placeholder="Write your message..."
+              class="w-full px-4 py-3 border-2  rounded-xl focus:outline-none focus:ring-2 focus:ring-[#5c4230]"></textarea>
+          </div>
+
+          <button type="submit" 
+            class="w-full py-3 bg-[#3a2a1e] text-white rounded-xl font-semibold shadow-md hover:bg-[#5c4230] transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info + Map -->
+      <div class="space-y-6">
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:border-2 border-[#3a2a1e]">
+          <h3 class="text-2xl font-semibold text-[#3a2a1e] mb-6">Our Shop</h3>
+          
+          <div class="space-y-4 text-gray-700">
+            <p><i class="fa-solid fa-location-dot text-[#3a2a1e] mr-2"></i>Chillies ladies stitching & designing</p>
+            <p><i class="fa-solid fa-phone text-[#3a2a1e] mr-2"></i>+91 8156909847</p>
+            <p><i class="fa-solid fa-envelope text-[#3a2a1e] mr-2"></i>nevaara@gmail.com</p>
+            <p><i class="fa-solid fa-clock text-[#3a2a1e] mr-2"></i>Mon - Sat : 9:00 AM - 9:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="rounded-2xl overflow-hidden shadow-lg border-2 border-[#3a2a1e]">
+          <iframe class="w-full h-72" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.1905812617056!2d76.5320162778834!3d9.054572667821928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06039203e10d85%3A0xdb2ea3ae483f248c!2sChillies%20ladies%20stitching%20%26%20designing!5e1!3m2!1sen!2sin!4v1757052342520!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

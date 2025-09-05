@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="bg-[#f7e9dd]">
+    <!-- Hero Section -->
+    <div class="relative h-[400px] overflow-hidden">
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-beautiful-woman-sitting-in-trees-in-an-orange-lehenga-image_2943037.jpg" alt="About Us Hero" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h1 class="text-white text-4xl md:text-5xl playfair font-semibold">Our Story</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <!-- Brand Story -->
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div class="space-y-6">
+                <h2 class="text-3xl playfair font-semibold text-[#4a3626]">Welcome to Nevaara</h2>
+                <p class="text-gray-700 leading-relaxed text-justify">
+                    Established in 2025, Nevaara represents the evolution of craftsmanship and style in home textiles. 
+                    Born from the rich heritage of Chillies Stitching Center, we bring decades of textile expertise to 
+                    modern home decor.
+                </p>
+                <p class="text-gray-700 leading-relaxed text-justify">
+                    Our collection combines traditional techniques with contemporary designs, creating pieces that 
+                    transform living spaces into havens of comfort and elegance.
+                </p>
+            </div>
+            <div class="relative">
+                <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-beautiful-woman-sitting-in-trees-in-an-orange-lehenga-image_2943037.jpg" alt="Brand Story" class="rounded-lg shadow-xl">
+                <div class="absolute -bottom-6 -left-6 bg-[#4a3626] text-white p-4 rounded-lg">
+                    <p class="text-2xl font-bold">2025</p>
+                    <p class="text-sm">Year Established</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="text-center mb-20">
+            <h2 class="text-3xl playfair font-semibold text-[#4a3626] mb-12">Our Values</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-[#f6ecdf] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-[#4a3626] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Quality Craftsmanship</h3>
+                    <p class="text-gray-600">Every piece is crafted with attention to detail and commitment to excellence.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-[#f6ecdf] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-[#4a3626] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Sustainability</h3>
+                    <p class="text-gray-600">We prioritize eco-friendly materials and responsible production practices.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-[#f6ecdf] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-[#4a3626] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Innovation</h3>
+                    <p class="text-gray-600">Blending traditional techniques with modern design sensibilities.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parent Company Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl playfair font-semibold text-[#4a3626] mb-4">Powered By</h2>
+                <div class="w-24 h-1 bg-[#4a3626] mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-[#4a3626]">Chillies Stitching Center</h3>
+                    <p class="text-gray-700 leading-relaxed text-justify">
+                        A renowned name in textile excellence since its establishment in Karunagappally, Kollam. 
+                        With decades of experience in crafting premium textiles, Chillies Stitching Center has 
+                        been serving the community with distinction.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-[#4a3626]"></i>
+                            <p class="text-gray-600">Karunagappally, Kollam, Kerala</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-[#4a3626]"></i>
+                            <p class="text-gray-600">+91 XXX XXX XXXX</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-[#4a3626]"></i>
+                            <p class="text-gray-600">contact@chilliesstitching.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-beautiful-woman-sitting-in-trees-in-an-orange-lehenga-image_2943037.jpg" alt="Chillies Stitching Center" class="rounded-lg shadow-md">
+                    <div class="absolute -bottom-4 -right-4 bg-[#4a3626] text-white py-2 px-4 rounded-lg">
+                        <p class="text-sm font-medium">Parent Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="text-center">
+            <h2 class="text-3xl playfair font-semibold text-[#4a3626] mb-12">Meet Our Team</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Add team member cards here -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.RwuMwDIwyua2aY9-syrawwHaE8?r=0&cb=ucfimg2ucfimg=1&w=768&h=512&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-lg font-semibold">Adithya</h3>
+                    <p class="text-gray-600 text-sm">Founder</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
