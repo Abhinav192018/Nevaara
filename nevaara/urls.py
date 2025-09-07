@@ -13,6 +13,11 @@ urlpatterns = [
     path('clearance/', views.Clearance_sale, name='clearance_sale'),
     path('gallery/', views.Gallery, name='gallery'),
     path('contact/', views.Contact, name='contact'),
+    path('wishlist/',views.wishlist,name='wishlist'),
+    path("cart/",views.Cart,name='cart'),
+    path('myaccount/',views.Myaccount,name='myaccount'),
+    path('orders/',views.Orders,name='orders'),
+
 
 ]
 

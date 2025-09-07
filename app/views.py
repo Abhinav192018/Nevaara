@@ -20,3 +20,15 @@ def Gallery(request):
 
 def Contact(request):
     return render(request, 'contact.html')
+
+def Myaccount(request):
+    return render(request,'myaccount.html')
+
+def Cart(request):
+    return render(request,'cart.html')
+
+def wishlist(request):
+    return render(request,'wishlist.html')
+
+def Orders(request):
+    return render(request,'orders.html')

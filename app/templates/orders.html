@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="bg-[#f7e9dd] min-h-screen py-10">
+    <div class="max-w-5xl mx-auto px-4">
+        <h1 class="text-3xl playfair font-semibold text-[#4a3626] mb-8 text-center">My Orders</h1>
+        
+        <!-- Orders List -->
+        <div class="space-y-6">
+            <!-- Single Order -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <!-- Order Header -->
+                <div class="bg-[#4a3626] text-white p-4 flex flex-wrap justify-between items-center">
+                    <div class="space-y-1">
+                        <p class="text-sm">Order #12345</p>
+                        <p class="text-xs opacity-75">Placed on: 5 Sept, 2025</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="font-semibold">₹2,499</p>
+                        <span class="inline-block px-3 py-1 bg-green-500 text-white text-xs rounded-full">Delivered</span>
+                    </div>
+                </div>
+
+                <!-- Order Items -->
+                <div class="p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Item 1 -->
+                        <div class="flex space-x-4">
+                            <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/v1/assets/images/21012720/2022/12/1/390c888c-a00c-4d7e-816a-a2d75fff685f1669881575392MYAARARedMaxiMaxiDress1.jpg" 
+                                alt="Product" 
+                                class="w-20 h-20 object-cover rounded-lg">
+                            <div>
+                                <h3 class="font-medium text-[#4a3626]">Floral Print Dress</h3>
+                                <p class="text-sm text-gray-600">Size: M | Qty: 1</p>
+                                <p class="text-sm font-medium">₹1,499</p>
+                            </div>
+                        </div>
+
+
+                        <div class="flex space-x-4">
+                            <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/v1/assets/images/21012720/2022/12/1/390c888c-a00c-4d7e-816a-a2d75fff685f1669881575392MYAARARedMaxiMaxiDress1.jpg" 
+                                alt="Product" 
+                                class="w-20 h-20 object-cover rounded-lg">
+                            <div>
+                                <h3 class="font-medium text-[#4a3626]">Floral Print Dress</h3>
+                                <p class="text-sm text-gray-600">Size: M | Qty: 1</p>
+                                <p class="text-sm font-medium">₹1,499</p>
+                            </div>
+                        </div>
+
+
+                        <!-- Item 2 -->
+                        <div class="flex space-x-4">
+                            <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/v1/assets/images/21012720/2022/12/1/390c888c-a00c-4d7e-816a-a2d75fff685f1669881575392MYAARARedMaxiMaxiDress1.jpg" 
+                                alt="Product" 
+                                class="w-20 h-20 object-cover rounded-lg">
+                            <div>
+                                <h3 class="font-medium text-[#4a3626]">Embroidered Kurta</h3>
+                                <p class="text-sm text-gray-600">Size: L | Qty: 1</p>
+                                <p class="text-sm font-medium">₹1,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Actions -->
+                    <div class="mt-4 pt-4 border-t flex flex-wrap gap-3">
+                        <button class="px-4 py-2 bg-[#f6ecdf] text-[#4a3626] rounded-lg hover:bg-[#4a3626] hover:text-white transition duration-200">
+                            Track Order
+                        </button>
+                        <button class="px-4 py-2 bg-[#f6ecdf] text-[#4a3626] rounded-lg hover:bg-[#4a3626] hover:text-white transition duration-200">
+                            Download Invoice
+                        </button>
+                        <button class="px-4 py-2 bg-[#f6ecdf] text-[#4a3626] rounded-lg hover:bg-[#4a3626] hover:text-white transition duration-200">
+                            Need Help?
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Another Order (Processing Status) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-[#4a3626] text-white p-4 flex flex-wrap justify-between items-center">
+                    <div class="space-y-1">
+                        <p class="text-sm">Order #12346</p>
+                        <p class="text-xs opacity-75">Placed on: 7 Sept, 2025</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="font-semibold">₹1,799</p>
+                        <span class="inline-block px-3 py-1 bg-yellow-500 text-white text-xs rounded-full">Processing</span>
+                    </div>
+                </div>
+
+                <div class="p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex space-x-4">
+                            <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/v1/assets/images/21012720/2022/12/1/390c888c-a00c-4d7e-816a-a2d75fff685f1669881575392MYAARARedMaxiMaxiDress1.jpg" 
+                                alt="Product" 
+                                class="w-20 h-20 object-cover rounded-lg">
+                            <div>
+                                <h3 class="font-medium text-[#4a3626]">Printed Anarkali</h3>
+                                <p class="text-sm text-gray-600">Size: S | Qty: 1</p>
+                                <p class="text-sm font-medium">₹1,799</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-4 border-t flex flex-wrap gap-3">
+                        <button class="px-4 py-2 bg-[#f6ecdf] text-[#4a3626] rounded-lg hover:bg-[#4a3626] hover:text-white transition duration-200">
+                            Track Order
+                        </button>
+                        <button class="px-4 py-2 bg-[#f6ecdf] text-[#4a3626] rounded-lg hover:bg-[#4a3626] hover:text-white transition duration-200">
+                            Cancel Order
+                        </button>
+                        <button class="px-4 py-2 bg-[#f6ecdf] text-[#4a3626] rounded-lg hover:bg-[#4a3626] hover:text-white transition duration-200">
+                            Need Help?
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty State (Hidden by default) -->
+            <!-- <div class="text-center py-12 text-gray-500">
+                <i class="fas fa-box-open text-5xl mb-4"></i>
+                <p>You haven't placed any orders yet.</p>
+                <a href="/products/" class="inline-block mt-4 px-6 py-2 bg-[#4a3626] text-white rounded-lg hover:bg-[#3a2a1e]">
+                    Start Shopping
+                </a>
+            </div> -->
+        </div>
+    </div>
+</div>
+{% endblock %}

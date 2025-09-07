@@ -35,7 +35,6 @@
     <link rel="icon" type="image/png" sizes="512x512" href="{% static 'images/logo.png' %}">
 
     <!-- PWA Manifest -->
-    <link rel="manifest" href="{% static 'manifest.json' %}">
     <meta name="theme-color" content="#4a3626">
 
 
@@ -127,7 +126,7 @@
 
                 <!-- Center: Logo -->
                 <a href="/" class="flex items-center ml-10">
-                    <img src="{% static 'images/logo.png' %}" alt="Nevaara Logo" class="h-10 w-auto">
+                    <img src="{% static 'images/logo.png' %}" alt="Nevaara Logo" class="h-10 lg:h-14 w-auto">
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -138,6 +137,8 @@
                         class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/products/' %}text-[#4a3626] font-semibold{% endif %}">PRODUCTS</a>
                     <a href="/clearance/"
                         class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/clearance/' %}text-[#4a3626] font-semibold{% endif %}">CLEARANCE</a>
+                    <a href="/orders/"
+                        class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}text-[#4a3626] font-semibold{% endif %}">ORDERS</a>
                     <a href="/about/"
                         class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}text-[#4a3626] font-semibold{% endif %}">ABOUT</a>
                     <a href="/contact/"
@@ -156,7 +157,7 @@
                         <span
                             class="absolute -top-1 -right-2 bg-[#4a3626] text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center">0</span>
                     </a>
-                    <a href="/profile/" class="text-gray-700 hover:text-[#4a3626]">
+                    <a href="/myaccount/" class="text-gray-700 hover:text-[#4a3626]">
                         <i class="fa-regular fa-user text-lg"></i>
                     </a>
                     <!-- Desktop Search -->
@@ -194,6 +195,9 @@
                 <a href="/clearance/"
                     class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/clearance/' %}font-semibold text-[#4a3626]{% endif %}"><i
                         class="fas fa-tags mr-2"></i>CLEARANCE</a>
+                <a href="/orders/"
+                    class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}font-semibold text-[#4a3626]{% endif %}"><i
+                        class="fas fa-info-circle mr-2"></i>ORDERS</a>
                 <a href="/about/"
                     class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}font-semibold text-[#4a3626]{% endif %}"><i
                         class="fas fa-info-circle mr-2"></i>ABOUT</a>

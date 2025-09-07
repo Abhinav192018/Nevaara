@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bg-[#f7e9dd] min-h-screen py-10">
+    <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-3xl playfair font-semibold text-[#4a3626] mb-8 text-center">My Wishlist</h1>
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <!-- Example wishlist items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-center space-x-4 border-b pb-4">
+                    <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/21012720/2022/12/1/390c888c-a00c-4d7e-816a-a2d75fff685f1669881575392MYAARARedMaxiMaxiDress1.jpg" alt="Product" class="w-24 h-24 object-cover rounded-lg">
+                    <div class="flex-1">
+                        <h2 class="text-lg font-semibold text-[#4a3626]">Product Name</h2>
+                        <p class="text-gray-600 text-sm">Short description of the product.</p>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span class="text-[#4a3626] font-bold text-lg">₹999</span>
+                            <button class="bg-[#4a3626] text-white px-3 py-1 rounded hover:bg-[#3a2a1e] text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                    <a href="" class="text-gray-400 hover:text-red-500 text-xl ">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+                   
+                </div>
+
+
+                <div class="flex items-center space-x-4 border-b pb-4">
+                    <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/21012720/2022/12/1/390c888c-a00c-4d7e-816a-a2d75fff685f1669881575392MYAARARedMaxiMaxiDress1.jpg" alt="Product" class="w-24 h-24 object-cover rounded-lg">
+                    <div class="flex-1">
+                        <h2 class="text-lg font-semibold text-[#4a3626]">Product Name</h2>
+                        <p class="text-gray-600 text-sm">Short description of the product.</p>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span class="text-[#4a3626] font-bold text-lg">₹999</span>
+                            <button class="bg-[#4a3626] text-white px-3 py-1 rounded hover:bg-[#3a2a1e] text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                    <a href="" class="text-gray-400 hover:text-red-500 text-xl ">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+                   
+                </div>
+
+
+
+                <div class="flex items-center space-x-4 border-b pb-4">
+                    <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/21012720/2022/12/1/390c888c-a00c-4d7e-816a-a2d75fff685f1669881575392MYAARARedMaxiMaxiDress1.jpg" alt="Product" class="w-24 h-24 object-cover rounded-lg">
+                    <div class="flex-1">
+                        <h2 class="text-lg font-semibold text-[#4a3626]">Product Name</h2>
+                        <p class="text-gray-600 text-sm">Short description of the product.</p>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <span class="text-[#4a3626] font-bold text-lg">₹999</span>
+                            <button class="bg-[#4a3626] text-white px-3 py-1 rounded hover:bg-[#3a2a1e] text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                    <a href="" class="text-gray-400 hover:text-red-500 text-xl ">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+                   
+                </div>
+
+
+                
+                
+                <!-- Repeat for more wishlist items -->
+            </div>
+            <!-- If wishlist is empty -->
+            <!-- <div class="text-center py-12 text-gray-500">
+                <i class="fa-regular fa-heart text-5xl mb-4"></i>
+                <p>Your wishlist is empty.</p>
+            </div> -->
+        </div>
+    </div>
+</div>
+{% endblock %}
