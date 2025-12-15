@@ -8,63 +8,105 @@
     <title>Nevaara</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+
+
+    <!-- Playfair Display Modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Inter Tight -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
 
-    <!-- fevicon icons  -->
-    <!-- Favicon and App Icons -->
+
+    <!-- Favicon and App Icons - Updated -->
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/logo.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/logo.png' %}">
     <link rel="shortcut icon" href="{% static 'images/logo.png' %}">
 
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'images/logo.png' %}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'images/logo.png' %}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/logo.png' %}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'images/logo.png' %}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/logo.png' %}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'images/logo.png' %}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'images/logo.png' %}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'images/logo.png' %}">
+    <!-- Apple Touch Icons - Updated -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/logo.png' %}">
 
-    <!-- Android/Chrome -->
-    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'images/logo.png' %}">
-    <link rel="icon" type="image/png" sizes="512x512" href="{% static 'images/logo.png' %}">
+    <!-- aos animation  -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- PWA Manifest -->
-    <meta name="theme-color" content="#4a3626">
 
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: "#f7e9dd",
+                        tea:"#5c4230",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- font style  -->
 
 
     <style>
-        /* Global Heading Style (applies to h1–h6) */
+        /* Apply Josefin Sans to the entire website */
+        html,
+        body {
+            font-family: "Josefin Sans", sans-serif !important;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+
+
+            /* ------------------------------------- */
+
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* Make headings correctly weighted */
         h1,
         h2,
         h3,
         h4,
         h5,
         h6 {
-            font-family: 'Playfair Display', serif;
+            font-family: "Josefin Sans", sans-serif !important;
+            font-weight: 600;
+            /* adjust as needed */
+            letter-spacing: 0.5px;
 
         }
 
-        /* Paragraph Style */
+        /* All paragraphs */
         p {
-            font-family: 'Inter', sans-serif;
-            font-weight: 300;
-            /* slim look */
-            font-size: 1rem;
-            /* base size */
-            line-height: 1.75;
-            /* nice readability */
-            margin-bottom: 1rem;
-            letter-spacing: 0.2px;
+            font-family: "Josefin Sans", sans-serif !important;
+            font-weight: 330;
         }
 
+        /* Navbar & menu items */
+        nav,
+        a,
+        li,
+        button,
+        span,
+        div {
+            font-family: "Josefin Sans", sans-serif !important;
+        }
+    </style>
 
+    <style>
         body {
 
             background-color: #f7e9dd;
@@ -109,7 +151,7 @@
     </style>
 </head>
 
-<body class="bg-white flex flex-col min-h-screen">
+<body class="bg-base flex flex-col min-h-screen">
     <!-- Navbar -->
     <!-- Slim Navbar -->
     <nav class="bg-[#f6ecdf] fixed w-full h-26 md:h-20 lg:h-20 top-0 z-50 shadow-md pt-2">
@@ -135,8 +177,7 @@
                         class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/' %}text-[#4a3626] font-semibold{% endif %}">HOME</a>
                     <a href="/products/"
                         class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/products/' %}text-[#4a3626] font-semibold{% endif %}">PRODUCTS</a>
-                    <a href="/clearance/"
-                        class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/clearance/' %}text-[#4a3626] font-semibold{% endif %}">CLEARANCE</a>
+                   
                     <a href="/orders/"
                         class="nav-link text-sm font-medium text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}text-[#4a3626] font-semibold{% endif %}">ORDERS</a>
                     <a href="/about/"
@@ -192,9 +233,7 @@
                 <a href="/products/"
                     class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/products/' %}font-semibold text-[#4a3626]{% endif %}"><i
                         class="fas fa-shopping-bag mr-2"></i>PRODUCTS</a>
-                <a href="/clearance/"
-                    class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/clearance/' %}font-semibold text-[#4a3626]{% endif %}"><i
-                        class="fas fa-tags mr-2"></i>CLEARANCE</a>
+
                 <a href="/orders/"
                     class="block py-2 text-gray-700 hover:text-[#4a3626] {% if request.path == '/about/' %}font-semibold text-[#4a3626]{% endif %}"><i
                         class="fas fa-info-circle mr-2"></i>ORDERS</a>
@@ -318,6 +357,15 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: "ease-in-out",
+            once: true,
+        });
+    </script>
+
 
     <script>
         const menuBtn = document.getElementById("menu-btn");
@@ -326,6 +374,7 @@
             mobileMenu.classList.toggle("hidden");
         });
     </script>
+
 </body>
 
 </html>

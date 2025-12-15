@@ -12,8 +12,11 @@ def About(request):
 def Products(request):
     return render(request, 'Products.html')
 
-def Clearance_sale(request):
-    return render(request, 'clearance.html')
+def Product_Detail(request):
+    return render(request, 'Product_Detail.html')
+
+# def Clearance_sale(request):
+#     return render(request, 'clearance.html')
 
 def Gallery(request):
     return render(request, 'gallery.html')

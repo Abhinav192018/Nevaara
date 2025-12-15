@@ -2,153 +2,430 @@
 {% load static %}
 {% block content %}
 
-<body class="bg-[#f7e9dd]">
 
-  <!-- Banner Section -->
-  <section
-    class="relative mx-auto bg-[#f7e9dd] overflow-hidden flex flex-col md:flex-row items-center justify-between p-6 md:p-12">
 
-    <!-- Left Image -->
-    <div class="w-full md:w-1/2 mb-6 md:mb-0">
-      <img
-        src="https://img.freepik.com/premium-photo/hot-girl-landscape-wearing-full-traditional-dress_658768-431.jpg?w=2000"
-        alt="Banner" class="rounded-3xl md:rounded-l-3xl md:rounded-r-none object-cover w-full h-72 md:h-full">
+<!-- Small E-commerce Banner -->
+<section class="relative h-[45vh] md:h-[60vh] bg-center bg-cover flex items-center"
+  style="background-image: url('https://img.freepik.com/premium-photo/hot-girl-landscape-wearing-full-traditional-dress_658768-431.jpg?w=2000');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-4xl mx-auto text-center px-6">
+
+    <h1 class="text-3xl md:text-5xl font-bold text-white uppercase tracking-wide">
+      Modern Ethnic Fashion
+    </h1>
+
+    <p class="text-white/90 mt-3 text-base md:text-lg">
+      Discover premium handcrafted collections for every occasion.
+    </p>
+
+    <a href="products/"
+      class="inline-block mt-6 px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-gray-200 transition">
+      Shop Now
+    </a>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CATEGORY SCROLL SECTION -->
+<section class="bg-[#f7e9dd] py-12">
+  <div class="text-center mb-10">
+    <h1 class="text-3xl sm:text-4xl font-bold text-[#3a2a1e] tracking-wide uppercase">
+      Explore Our Categories
+    </h1>
+    <p class="text-gray-700 mt-2 text-sm sm:text-base">
+      Find outfits that match your style and personality
+    </p>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- PURE HORIZONTAL SCROLL (Mobile + Desktop) -->
+    <div class="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4">
+
+      <!-- Card -->
+      <a href="" class="relative overflow-hidden shadow-lg min-w-[260px] snap-start">
+        <img
+          src="https://docket.kartmax.in/sites/9s145MyZrWdIAwpU0JYS/product-images/red_radiance_stand_collar_kurti_for_women_1753960023as3383070_2.jpg"
+          class="w-full aspect-[3/4] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 class="text-2xl font-bold">Long Kurti</h2>
+          <p class="text-sm">Elegant & stylish wear</p>
+        </div>
+      </a>
+
+      <!-- Card -->
+      <a href="" class="relative overflow-hidden shadow-lg min-w-[260px] snap-start">
+        <img src="https://www.gulabidorijaipur.com/cdn/shop/files/image_0023_DSC09924.jpg?v=1688504361&width=800"
+          class="w-full aspect-[3/4] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 class="text-2xl font-bold">Short Kurti</h2>
+          <p class="text-sm">Comfort with flair</p>
+        </div>
+      </a>
+
+      <!-- Card -->
+      <a href="" class="relative overflow-hidden shadow-lg min-w-[260px] snap-start">
+        <img
+          src="https://assets.myntassets.com/w_412,q_30,dpr_3,fl_progressive,f_webp/assets/images/27684940/2024/2/19/3669658e-14a5-4cba-9ee9-12021c7090721708340636148BerryBirdCropTop1.jpg"
+          class="w-full aspect-[3/4] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 class="text-2xl font-bold">Crop Tops</h2>
+          <p class="text-sm">Trendy essentials</p>
+        </div>
+      </a>
+
+      <!-- Card -->
+      <a href="" class="relative overflow-hidden shadow-lg min-w-[260px] snap-start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0_FCBdaVu6Oc4l9uPcR27-2kpSPC53Fnuw&s"
+          class="w-full aspect-[3/4] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 class="text-2xl font-bold">Shirts</h2>
+          <p class="text-sm">Classic everyday fit</p>
+        </div>
+      </a>
+
+      <!-- Card -->
+      <a href="" class="relative overflow-hidden shadow-lg min-w-[260px] snap-start">
+        <img src="https://fashor.com/cdn/shop/files/25828_12.jpg?v=1716972290&width=1445"
+          class="w-full aspect-[3/4] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 class="text-2xl font-bold">Co-ord Sets</h2>
+          <p class="text-sm">Perfect matching outfits</p>
+        </div>
+      </a>
+
+      <!-- Card -->
+      <a href="" class="relative overflow-hidden shadow-lg min-w-[260px] snap-start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmDOCESUKVhFffNnhqkLxxDHtnalUfET44g&s"
+          class="w-full aspect-[3/4] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 class="text-2xl font-bold">Comfort Wear</h2>
+          <p class="text-sm">Soft & breathable</p>
+        </div>
+      </a>
+
+      <!-- Card -->
+      <a href="" class="relative overflow-hidden shadow-lg min-w-[260px] snap-start">
+        <img
+          src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcHphnu-4HA4smt3HVZ5lcH-LLhA2iNmxqTEb2h6YkbNTBzl0AoXu9920U2vI889I9vUK4iauW1NE9ucFKH_S4_RFF5k1A6UKie__eWWHn7DGWxcUZmQWlcpOn1gSTpXmngenw6JQ?key=tC3NzZqpzVnxS-PTqnsQFbSJ"
+          class="w-full aspect-[3/4] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h2 class="text-2xl font-bold">Trending</h2>
+          <p class="text-sm">Hot picks of the season</p>
+        </div>
+      </a>
+
+
+
     </div>
 
-    <!-- Right Content -->
-    <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left">
-      <h2 class="text-3xl md:text-5xl font-bold text-[#3a2a1e] leading-tight">
-        Where Modern Women <br class="hidden md:block"> Meet Tradition
+  </div>
+</section>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- NEW ARRIVALS SECTION -->
+<section class="py-16 bg-base">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 uppercase tracking-wide">
+        New Arrivals
       </h2>
-      <p class="mt-4 text-base md:text-lg text-[#3a2a1e]/80">
-        where timeless Indian hand-block traditions meet the spirit of the modern woman
+      <p class="text-gray-600 mt-2 text-sm sm:text-base">
+        Fresh styles curated just for you
       </p>
-
-      <!-- Buttons -->
-      <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
-        <a href=""
-          class="px-6 py-2 border border-[#3a2a1e] rounded-full text-[#3a2a1e] hover:bg-[#3a2a1e] hover:text-white transition">PREMIUM</a>
-        <a href=""
-          class="px-6 py-2 border border-[#3a2a1e] rounded-full text-[#3a2a1e] hover:bg-[#3a2a1e] hover:text-white transition">WEDDING</a>
-        <a href=""
-          class="px-6 py-2 border border-[#3a2a1e] rounded-full text-[#3a2a1e] hover:bg-[#3a2a1e] hover:text-white transition">CUSTOMISATION</a>
-      </div>
     </div>
-  </section>
 
-  <!-- Cards Section -->
-  <section class="bg-[#f7e9dd] py-10">
-    <div class="max-w-7xl mx-auto px-4">
+    <!-- GRID LISTING -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-      <!-- Cards Wrapper -->
-      <div class="flex gap-6 overflow-x-auto sm:grid sm:grid-cols-3 sm:gap-6 scrollbar-hide">
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
 
-        <!-- Card 1 -->
-        <div class="relative rounded-2xl overflow-hidden shadow-lg min-w-[250px] sm:min-w-0">
-          <img src="https://static.india.com/wp-content/uploads/2024/06/Leriya-Fashion-Sleeveless-Tops.jpg"
-            alt="Sleeveless" class="w-full h-96 object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-          <div class="absolute bottom-6 left-6 text-white">
-            <span class="block text-sm font-semibold mb-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur">
-              01
-            </span>
-            <h2 class="text-2xl font-bold">sleeveless</h2>
-            <p class="text-sm">Tailor-made pieces to fit your style.</p>
+        <!-- NEW Badge -->
+        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">
+          New
+        </span>
+
+        <img src="https://images.meesho.com/images/products/626640589/yrcdk_512.webp?width=512"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Elegant Kurti</h3>
+
+          <!-- Pricing -->
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹999</p>
+
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹1499</span>
+              <span class="text-sm font-semibold text-green-600">33% OFF</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- Card 2 -->
-        <div class="relative rounded-2xl overflow-hidden shadow-lg min-w-[250px] sm:min-w-0">
-          <img
-            src="https://i5.walmartimages.com/seo/JYLFC-Womens-Peplum-Tops-V-Neck-Short-Sleeve-Wrap-Dressy-Blouse-Ruffle-Hem-M_b90e7220-c187-4e90-8c71-bbf30b91da43.10c88afe98d510527be8b07bb3a1c713.jpeg"
-            alt="Peplum Top" class="w-full h-96 object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-          <div class="absolute bottom-6 left-6 text-white">
-            <span class="block text-sm font-semibold mb-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur">
-              02
-            </span>
-            <h2 class="text-2xl font-bold">peplum top</h2>
-            <p class="text-sm">made for modern women</p>
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
+
+        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">
+          New
+        </span>
+
+        <img src="https://fashor.com/cdn/shop/files/25828_12.jpg?v=1716972290&width=1445"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Designer Co-ord Set</h3>
+
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹1799</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹2499</span>
+              <span class="text-sm font-semibold text-green-600">28% OFF</span>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div class="relative rounded-2xl overflow-hidden shadow-lg min-w-[250px] sm:min-w-0">
-          <img
-            src="https://wforwoman.com/cdn/shop/files/23AUSP11442-122624_1_1f12c841-5a60-49a0-a8a2-aac425f8e766.jpg?v=1721311611"
-            alt="Decorations" class="w-full h-96 object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-          <div class="absolute bottom-6 left-6 text-white">
-            <span class="block text-sm font-semibold mb-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur">
-              03
-            </span>
-            <h2 class="text-2xl font-bold">Decorations</h2>
-            <p class="text-sm">Beauty in style</p>
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
+
+        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">
+          New
+        </span>
+
+        <img
+          src="https://assets.myntassets.com/w_412,q_30,dpr_3,fl_progressive,f_webp/assets/images/27684940/2024/2/19/3669658e-14a5-4cba-9ee9-12021c7090721708340636148BerryBirdCropTop1.jpg"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Trendy Crop Top</h3>
+
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹699</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹999</span>
+              <span class="text-sm font-semibold text-green-600">30% OFF</span>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
 
-  <!-- Budget Section -->
-  <section class="bg-[#f7e9dd] py-16">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#3a2a1e] mb-10">Budget Collection</h2>
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded-full uppercase">
+          New
+        </span>
 
-        <!-- Price Card -->
-        <a href="" class="bg-white rounded-2xl shadow-lg p-8 relative overflow-hidden">
-          <div class="absolute top-4 right-4 text-[#f7e9dd]/50 text-6xl font-extrabold select-none">₹</div>
-          <div class="flex flex-col items-center">
-            <div class="bg-[#3a2a1e] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
-              <!-- Example icon (tag) -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M7 7h.01M3 5a2 2 0 012-2h4a2 2 0 011.414.586l7.293 7.293a1 1 0 010 1.414l-4.586 4.586a1 1 0 01-1.414 0L5.586 7A2 2 0 015 5H3z" />
-              </svg>
+        <img
+          src="https://docket.kartmax.in/sites/9s145MyZrWdIAwpU0JYS/product-images/red_radiance_stand_collar_kurti_for_women_1753960023as3383070_2.jpg"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Red Long Kurti</h3>
+
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹1299</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹1999</span>
+              <span class="text-sm font-semibold text-green-600">35% OFF</span>
             </div>
-            <h3 class="text-2xl font-semibold text-[#3a2a1e]">Budget Style</h3>
-            <p class="mt-2 text-lg font-bold text-[#3a2a1e]">₹399/-</p>
           </div>
-        </a>
-
-        <a href="" class="bg-white rounded-2xl shadow-lg p-8 relative overflow-hidden">
-          <div class="absolute top-4 right-4 text-[#f7e9dd]/50 text-6xl font-extrabold select-none">₹</div>
-          <div class="flex flex-col items-center">
-            <div class="bg-[#3a2a1e] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 8c-1.104 0-2 .672-2 1.5S10.896 11 12 11s2-.672 2-1.5S13.104 8 12 8zM12 14v.01" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-semibold text-[#3a2a1e]">Trendy Picks</h3>
-            <p class="mt-2 text-lg font-bold text-[#3a2a1e]">₹699/-</p>
-          </div>
-        </a>
-
-        <a href="" class="bg-white rounded-2xl shadow-lg p-8 relative overflow-hidden">
-          <div class="absolute top-4 right-4 text-[#f7e9dd]/50 text-6xl font-extrabold select-none">₹</div>
-          <div class="flex flex-col items-center">
-            <div class="bg-[#3a2a1e] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-semibold text-[#3a2a1e]">Elegant Wear</h3>
-            <p class="mt-2 text-lg font-bold text-[#3a2a1e]">₹999/-</p>
-          </div>
-        </a>
-
+        </div>
       </div>
+
     </div>
-  </section>
+
+  </div>
+</section>
 
 
 
-</body>
+
+
+
+
+
+
+<!-- FEATURED PRODUCTS SECTION -->
+<section class="py-16 bg-base">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 uppercase tracking-wide">
+        Featured Products
+      </h2>
+      <p class="text-gray-600 mt-2 text-sm sm:text-base">
+        Handpicked premium selections curated for you
+      </p>
+    </div>
+
+    <!-- GRID LISTING -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
+
+        <!-- FEATURED Badge -->
+        <span
+          class="absolute top-3 right-3 bg-orange-600 text-white text-sm px-2 py-1.5 rounded-full flex items-center gap-1">
+          <i class="fas fa-star text-xs"></i>
+
+        </span>
+
+
+        <img
+          src="https://docket.kartmax.in/sites/9s145MyZrWdIAwpU0JYS/product-images/red_radiance_stand_collar_kurti_for_women_1753960023as3383070_2.jpg"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Elegant Long Kurti</h3>
+
+          <!-- Pricing -->
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹1299</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹1999</span>
+              <span class="text-sm font-semibold text-green-600">35% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
+
+        <!-- FEATURED Badge -->
+        <span
+          class="absolute top-3 right-3 bg-orange-600 text-white text-sm px-2 py-1.5 rounded-full flex items-center gap-1">
+          <i class="fas fa-star text-xs"></i>
+
+        </span>
+
+        <img src="https://fashor.com/cdn/shop/files/25828_12.jpg?v=1716972290&width=1445"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Premium Co-ord Set</h3>
+
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹1899</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹2499</span>
+              <span class="text-sm font-semibold text-green-600">24% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
+
+        <!-- FEATURED Badge -->
+        <span
+          class="absolute top-3 right-3 bg-orange-600 text-white text-sm px-2 py-1.5 rounded-full flex items-center gap-1">
+          <i class="fas fa-star text-xs"></i>
+
+        </span>
+
+        <img
+          src="https://assets.myntassets.com/w_412,q_30,dpr_3,fl_progressive,f_webp/assets/images/27684940/2024/2/19/3669658e-14a5-4cba-9ee9-12021c7090721708340636148BerryBirdCropTop1.jpg"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Trending Crop Top</h3>
+
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹749</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹999</span>
+              <span class="text-sm font-semibold text-green-600">25% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Product Card -->
+      <div class="relative bg-white overflow-hidden hover:shadow-lg transition">
+
+        <!-- FEATURED Badge -->
+        <span
+          class="absolute top-3 right-3 bg-orange-600 text-white text-sm px-2 py-1.5 rounded-full flex items-center gap-1">
+          <i class="fas fa-star text-xs"></i>
+
+        </span>
+
+        <img src="https://images.meesho.com/images/products/626640589/yrcdk_512.webp?width=512"
+          class="w-full aspect-[3/4] object-cover">
+
+        <div class="p-4 bg-base">
+          <h3 class="text-lg font-semibold text-gray-800 leading-tight">Stylish New Kurti</h3>
+
+          <div class="mt-2">
+            <p class="text-lg font-bold text-gray-900">₹999</p>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through text-gray-500">₹1499</span>
+              <span class="text-sm font-semibold text-green-600">33% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
 {% endblock %}
